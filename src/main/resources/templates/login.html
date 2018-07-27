@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body> 	
+	<form action="#" th:action="@{/sec/login}" th:object=${userForm} method="post">
+	<table>
+		<tr>
+		<td>UserName</td>
+		<td><input type="text" name="username" th:field="${userForm.username}"/></td>
+		</tr>
+		
+		<tr>
+		<td>Password</td>
+		<td><input type="password" name="password" th:field="${userForm.password}"/></td>
+		</tr>
+		
+		<tr>
+		<td><input type="submit" value="Sign In"></td>
+		<td><input type="button" value="Enroll"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
